@@ -1,0 +1,49 @@
+npm uninstall -g expo-cli (expo global esta deprecado)
+
+npx create-expo-app@latest --template blank
+
+npm install yarn
+
+Instala las librerías esenciales de navegación (React Navigation y sus dependencias):
+npx expo install react-navigation 
+npx expo install @react-navigation/native
+npx expo install react-native-gesture-handler 
+npx expo install react-native-screens 
+npx expo install react-native-safe-area-context 
+npx expo install react-native-reanimated 
+npx expo install react-native-vector-icons 
+npx expo install react-native-get-random-values
+
+Librerías específicas de navegación:
+npx expo install @react-navigation/native-stack 
+npx expo install @react-navigation/bottom-tabs 
+npx expo install @react-navigation/drawer 
+npx expo install react-native-paper 
+npx expo install react-native-tab-view
+
+Instala las librerías para formularios:
+yarn add formik 
+yarn add yup 
+yarn add react-hook-form
+
+Instala las librerías para acceso a APIs (Axios):
+npm install axios
+
+Instala las librerías para almacenamiento local (Async Storage):
+yarn add @react-native-async-storage/async-storage
+
+Otras:
+yarn add react-icons
+npx expo install firebase
+
+Elimina el archivo package-lock.json:
+rm package-lock.json
+
+Reinstalamos todas las dependencias:
+rm node_modules
+yarn install
+
+npx install expo react-native-maps
+
+Para archivo .env
+npm i -D react-native-dotenv

@@ -1,0 +1,47 @@
+Componentes de Interfaz de Usuario
+
+View: Un contenedor genérico para otros componentes. Similar a un div en HTML.
+    Uso: <View style={{ flex: 1, justifyContent: 'center' }}><Text>Hola Mundo!</Text></View>
+Text: Un componente para mostrar texto.
+    Uso: <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Hola Mundo!</Text>
+Image: Un componente para mostrar imágenes.
+    Uso: <Image source={{ uri: 'https://example.com/image.jpg' }} style={{ width: 100, height: 100 }} />
+TouchableOpacity: Un componente para crear botones táctiles.
+    Uso: <TouchableOpacity onPress={() => console.log('Botón presionado')}><Text>Presiona aquí</Text></TouchableOpacity>
+ScrollView: Un componente para crear vistas desplazables.
+    Uso: <ScrollView style={{ flex: 1 }}><Text>Contenido desplazable</Text></ScrollView>
+
+Componentes de Navegación
+
+StackNavigator: Un componente para crear una pila de pantallas.
+    Uso: const Stack = createStackNavigator(); <Stack.Navigator><Stack.Screen name="Home" component={HomeScreen} /></Stack.Navigator>
+TabNavigator: Un componente para crear una barra de pestañas.
+    Uso: const Tab = createBottomTabNavigator(); <Tab.Navigator><Tab.Screen name="Home" component={HomeScreen} /></Tab.Navigator>
+DrawerNavigator: Un componente para crear un menú lateral.
+    Uso: const Drawer = createDrawerNavigator(); <Drawer.Navigator><Drawer.Screen name="Home" component={HomeScreen} /></Drawer.Navigator>
+
+
+Componentes de Formulario
+
+TextInput: Un componente para crear campos de texto.
+    Uso: <TextInput placeholder="Ingrese su nombre" style={{ height: 40, borderColor: 'gray', borderWidth: 1 }} />
+Picker: Un componente para crear menús desplegables.
+    Uso: <Picker selectedValue={this.state.language} onValueChange={(itemValue, itemIndex) => this.setState({ language: itemValue })}><Picker.Item label="Español" value="es" /><Picker.Item label="Inglés" value="en" /></Picker>
+Switch: Un componente para crear interruptores.
+    Uso: <Switch value={this.state.switchValue} onValueChange={(value) => this.setState({ switchValue: value })} />
+
+
+Componentes de Medios
+
+Video: Un componente para reproducir videos.
+    Uso: <Video source={{ uri: 'https://example.com/video.mp4' }} style={{ width: 300, height: 200 }} />
+Audio: Un componente para reproducir audio.
+    Uso: <Audio source={{ uri: 'https://example.com/audio.mp3' }} />
+
+
+Otros Componentes
+
+StatusBar: Un componente para personalizar la barra de estado.
+    Uso: <StatusBar barStyle="light-content" />
+ActivityIndicator: Un componente para mostrar un indicador de actividad.
+    Uso: <ActivityIndicator size="large" color="#0000ff" />

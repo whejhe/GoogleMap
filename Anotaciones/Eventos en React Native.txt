@@ -1,0 +1,35 @@
+Eventos de pantalla
+    onLayout: se dispara cuando el componente se renderiza por primera vez o cuando cambia de tamaño.
+    onContentSizeChange: se dispara cuando el contenido del componente cambia de tamaño.
+    onScroll: se dispara cuando el usuario hace scroll en un componente.
+
+Eventos de interacción
+    onPress: se dispara cuando el usuario presiona un botón o un elemento interactivo.
+    onLongPress: se dispara cuando el usuario mantiene presionado un botón o un elemento interactivo durante un tiempo determinado.
+    onFocus: se dispara cuando un componente recibe el foco.
+    onBlur: se dispara cuando un componente pierde el foco.
+
+Eventos de texto
+    onChangeText: se dispara cuando el texto de un campo de texto cambia.
+    onSubmitEditing: se dispara cuando el usuario presiona el botón de envío en un campo de texto.
+    onEndEditing: se dispara cuando el usuario termina de editar un campo de texto.
+
+Eventos de navegación
+    onNavigationStateChange: se dispara cuando el estado de navegación cambia.
+    onWillFocus: se dispara cuando un componente está a punto de recibir el foco.
+    onDidFocus: se dispara cuando un componente ha recibido el foco.
+
+Eventos de gestos
+    onPanResponderMove: se dispara cuando el usuario mueve el dedo sobre la pantalla.
+    onPanResponderRelease: se dispara cuando el usuario suelta el dedo de la pantalla.
+    onPanResponderTerminate: se dispara cuando el gesto de movimiento se termina.
+
+Interaccion con Componentes
+    onPress: Es el equivalente a onClick en React Native. Se dispara cuando el usuario presiona un botón o un elemento interactivo.
+    onPressIn: Se dispara cuando el usuario presiona un botón o un elemento interactivo y no lo suelta.
+    onPressOut: Se dispara cuando el usuario suelta un botón o un elemento interactivo después de haberlo presionado.
+    onLongPress: Se dispara cuando el usuario mantiene presionado un botón o un elemento interactivo durante un tiempo determinado.
+    onTouchStart: Se dispara cuando el usuario toca la pantalla.
+    onTouchMove: Se dispara cuando el usuario mueve el dedo sobre la pantalla.
+    onTouchEnd: Se dispara cuando el usuario suelta el dedo de la pantalla.
+    onTouchCancel: Se dispara cuando el evento de toque es cancelado.
